@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://middleclicker.github.io/RepertoirePublic/sitemap.xml
