@@ -13,3 +13,5 @@ Preview locally with `python3 -m http.server 4173`, then open http://localhost:4
 Pushes to `main` publish the explicitly selected static files through GitHub Pages.
 
 The policy reflects the app implementation reviewed October 17, 2026. Review it whenever data collection, publication, providers, or deletion behavior changes. App Store and TestFlight download links can be added when available.
+
+Published policies now include `/terms/`, `/community/`, `/support/`, and the updated `/privacy/` describing private Firebase cloud sync and public content moderation. The deployment workflow explicitly copies these directories.
