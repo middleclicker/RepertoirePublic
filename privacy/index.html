@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f5ef">
   <title>Privacy policy — Repertoire</title>
-  <meta name="description" content="How Repertoire handles your repertoire, public profile, community contributions, and privacy choices.">
+  <meta name="description" content="How Repertoire handles your account, repertoire, public profile, community contributions, and account deletion.">
   <link rel="icon" type="image/png" href="../assets/app-icon.png">
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -19,39 +19,49 @@
     <main id="main" class="policy">
       <a class="back-link" href="../">← Back to Repertoire</a>
       <h1>Privacy policy</h1>
-      <p class="updated">Effective October 17, 2026</p>
+      <p class="updated">Effective October 18, 2026</p>
       <p class="summary">Your musical life is personal. Here’s what stays on your device, what’s shared, and how to manage it.</p>
       <p>This policy covers the Repertoire iPhone and iPad app and this website, maintained by the developer at <a href="https://github.com/middleclicker">middleclicker</a>.</p>
 
+      <h2>Your account</h2>
+      <p>Repertoire asks you to register or sign in. You can use an email address and password, Sign in with Apple, or Google sign-in, and you can link Apple or Google to your account from <strong>Profile → Account</strong>. Firebase sends a verification email for email registrations and handles password reset emails. Community features require a verified email address. Earlier anonymous accounts are linked in place when you register, so they keep their profile, follows, contributions, and referral credit.</p>
+      <p>The service stores your account identifier, email address, linked sign-in providers, email verification status, and account creation date. Your email address and password are never shown on your public profile. Passwords and Apple or Google sign-in tokens are not saved in your journal; refresh credentials and limited account details, such as your opaque Apple user ID, are kept in the device Keychain. Signing out removes this device’s push registration from your account.</p>
+
       <h2>On your device</h2>
-      <p>Repertoire saves your journal on your device: your pieces and their status, personal difficulty and enjoyment ratings, comparison history, favorite excerpts, profile preferences, and appearance settings. Core catalogue search and personal rankings work offline. Your full journal is not uploaded as a cloud backup by Repertoire. Device backups you enable through Apple may include app data.</p>
+      <p>Repertoire saves your journal on your device: your pieces and their status, personal difficulty and enjoyment ratings, comparison history, practice history, imported PDFs, favorite excerpts, profile preferences, and appearance settings. Each account has its own separate journal on the device, and signing out keeps it for when you sign in again. Your full journal is not uploaded or synced across devices by Repertoire. Device backups you enable through Apple may include app data.</p>
 
       <h2>Public profiles and community features</h2>
       <p><strong>Profiles are public by default.</strong> When the online service is configured, completing setup or using an existing journal publishes your name or nickname, instrument, experience level, bio, saved piece titles and statuses, favorite excerpt bar ranges and notes, and selected Loved pieces. Updates are shared automatically. There is no private-profile switch. Avoid putting sensitive information in your profile or excerpt notes.</p>
-      <p>Personal numeric ratings, individual comparison history, and saved recording URLs are not included in your public profile. Follow relationships and repertoire overlap support feeds, musician suggestions, and recommendations.</p>
-      <p>Community difficulty features can automatically send eligible piano comparisons, catalogue identifiers, your stated experience level, and answer revisions to the backend. These contributions are associated with an anonymous service identifier and used to estimate community difficulty. Your public profile is separate from this contribution data.</p>
+      <p>Personal numeric ratings, individual comparison history, and saved recording URLs are not included in your public profile. Follow relationships and repertoire overlap support feeds, musician suggestions, and recommendations. A new follow creates an Activity notification for the person you follow.</p>
+      <p>Community difficulty features can automatically send eligible piano comparisons, catalogue identifiers, your stated experience level, and answer revisions to the backend. These contributions are linked to your account identifier and used to estimate community difficulty. They are not shown on your public profile.</p>
       <p>Where referral features are available, the service stores an account-linked referral code, account creation date, referral redemption and inviter relationship, and qualifying referral count to manage access and prevent abuse.</p>
+
+      <h2>Reports, blocks, and moderation</h2>
+      <p>You can report or block another musician from their profile. A report stores your account identifier, the reported account, the reason and any details you add, and a copy of their public profile at that moment. Reports are reviewed by the developer and are never shown to the person you reported. Blocks are stored on the server and hide each account from the other; you can see and remove your blocks in <strong>Profile → Settings → Blocked musicians</strong>.</p>
+      <p>Authorized administrators can look up accounts by email or identifier, review reports, hide or restore public profiles, suspend accounts, and permanently delete accounts that break the rules. Each action is recorded in a private audit log with the operator’s reason. Administrators cannot see your on-device journal.</p>
 
       <h2>Online services</h2>
       <ul>
-        <li><strong>Google Firebase</strong> provides anonymous authentication, database storage, and backend processing. An anonymous identifier connects your service activity; it does not mean that your activity is unlinked. Credentials are stored in the device Keychain. Service providers also process connection information, such as IP addresses and operational logs, to deliver and secure the service. See <a href="https://firebase.google.com/support/privacy">Firebase’s privacy information</a>.</li>
-        <li><strong>Apple</strong> receives composer and piece-title searches for representative album artwork through iTunes, along with the connection information needed to serve searches and images. If you enable push notifications, Repertoire stores an APNs device token and notification preference to send follow alerts. See <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>.</li>
+        <li><strong>Google Firebase</strong> provides account authentication, verification and password reset emails, database storage, and backend processing. Service providers also process connection information, such as IP addresses and operational logs, to deliver and secure the service. See <a href="https://firebase.google.com/support/privacy">Firebase’s privacy information</a>.</li>
+        <li><strong>Apple</strong> handles Sign in with Apple if you choose it, and may share a private relay email address instead of your own. Apple also receives composer and piece-title searches for representative album artwork through iTunes, along with the connection information needed to serve searches and images. If you enable push notifications, Repertoire stores an APNs device token and notification preference to send follow alerts. See <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>.</li>
+        <li><strong>Google</strong> handles Google sign-in if you choose it and shares your account’s email address with Repertoire. See <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</li>
         <li><strong>External recording links</strong> open the provider you choose, such as YouTube. That provider’s privacy policy applies when you visit it.</li>
       </ul>
       <p>Repertoire does not include advertising or third-party behavioral analytics, sell your personal data, or use your activity for cross-app advertising tracking.</p>
 
       <h2>Your choices and deletion</h2>
-      <p>Edit your profile and remove individual pieces or excerpts in the app. Disable notifications in iOS Settings. Use <strong>Profile → Reset app</strong> to delete your public profile, incoming and outgoing follow relationships, your notification inbox and registered push devices, then clear your local journal and settings. The app requires a successful online profile deletion before completing this reset. Completing setup again can publish a new profile.</p>
-      <p><strong>Reset is not full service-account deletion.</strong> The anonymous authentication identity, community contributions, referral records, and operational records may remain. Removing the app alone does not delete your public profile or server data. Copies you export or save outside the app remain under your control.</p>
-      <p>For access, correction, or deletion of remaining server data, or if you can no longer access the app, email <a href="mailto:cxy20052008@gmail.com">cxy20052008@gmail.com</a>. We may need information to locate your records and verify that they are yours; anonymous accounts may be difficult to identify after device access is lost. Do not send passwords or authentication tokens.</p>
+      <p>Edit your profile and remove individual pieces or excerpts in the app. Disable notifications in iOS Settings. Sign out from <strong>Profile → Account</strong>.</p>
+      <p>Use <strong>Profile → Delete account</strong> to permanently delete your account. After you confirm with your password, Apple, or Google, Repertoire deletes your sign-in identity, public profile, incoming and outgoing follows, notification inbox, registered push devices, blocks and reports, community difficulty contributions, and referral code and credits, then erases that account’s journal and settings on this device. For Sign in with Apple, the app also revokes Repertoire’s access with Apple. If deletion is interrupted, you can retry it. Registering again starts a new account.</p>
+      <p>Removing the app alone does not delete your account or server data. Deletion cannot erase files you exported or copies on other devices. Moderation audit entries keep the account identifier and the reason for any action taken, without your profile content.</p>
+      <p>For access or correction requests, or if you can no longer access the app to delete your account, email <a href="mailto:cxy20052008@gmail.com">cxy20052008@gmail.com</a>. We may need information to locate your records and verify that they are yours. Do not send passwords or authentication tokens.</p>
 
       <h2>Retention and security</h2>
-      <p>Local data remains until you remove or reset it. Server records are retained to operate community features, maintain the integrity of contributions and referrals, and prevent abuse, unless removed through the applicable deletion process. There is no single automatic deletion period for all server data. Providers’ logs and backups may follow their own retention schedules. Services may process data outside your country.</p>
-      <p>Repertoire uses HTTPS for online requests, device Keychain storage for credentials, and authenticated backend access. No storage or transmission method can guarantee absolute security.</p>
+      <p>Local data remains until you remove it or delete your account. Server records are retained to operate community features, maintain the integrity of contributions and referrals, and prevent abuse, until you delete your account or an administrator removes them. There is no single automatic deletion period for all server data. Providers’ logs and backups may follow their own retention schedules. Services may process data outside your country.</p>
+      <p>Repertoire uses HTTPS for online requests, device Keychain storage for credentials, and authenticated backend access. Sensitive actions such as account deletion require a recent sign-in. No storage or transmission method can guarantee absolute security.</p>
 
       <h2>This website and contact</h2>
       <p>This website uses no analytics scripts, forms, cookies, or browser storage. GitHub Pages hosts it and may process IP addresses and request information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. If you contact us, we use your message and contact information to respond and handle your request.</p>
-      <p>For privacy questions or support, email <a href="mailto:cxy20052008@gmail.com">cxy20052008@gmail.com</a> or visit the <a href="https://github.com/middleclicker/RepertoirePublic/issues">issue page</a>. Issues are public; use email for personal information or deletion requests.</p>
+      <p>For privacy questions or support, email <a href="mailto:cxy20052008@gmail.com">cxy20052008@gmail.com</a> or visit the <a href="https://github.com/middleclicker/RepertoirePublic/issues">issue page</a>. Issues are public; use email for personal information or privacy requests.</p>
       <p>We will update this page when our data practices change and revise the effective date above.</p>
     </main>
     <footer class="site-footer">
