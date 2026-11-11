@@ -3,6 +3,7 @@
 The static landing page for Repertoire for iPhone and iPad. Pushes to `main` deploy through GitHub Pages.
 
 - [Home](https://www.getrepertoire.app/)
+- [What’s new](https://www.getrepertoire.app/update.html)
 - [Privacy Policy](https://www.getrepertoire.app/privacy/)
 - [Support](https://www.getrepertoire.app/support/)
 
