@@ -29,7 +29,7 @@ jobs:
           cp index.html privacy.html support.html style.css script.js robots.txt sitemap.xml .nojekyll _site/
           cp -R assets _site/
           for page in privacy support; do
-            sed -E 's@href="(index\.html|privacy\.html|support\.html|style\.css|assets/)@href="../\1@g' "$page.html" > "_site/$page/index.html"
+            sed -E 's@(href|src)="(index\.html|privacy\.html|support\.html|style\.css|assets/)@\1="../\2@g' "$page.html" > "_site/$page/index.html"
           done
       - uses: actions/upload-pages-artifact@v3
         with:
