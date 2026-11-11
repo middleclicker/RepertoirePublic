@@ -136,6 +136,9 @@ em { font-weight: 500; }
 .download h2 em { color: var(--gold); }
 .download p { color: #e2eadd; }
 .download .button { margin-top: 6px; }
+.download-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; }
+.android-download { margin-top: 22px; }
+.info-page .download-meta { margin-top: 10px; font-size: .85rem; }
 .footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 24px; border-top: 1px solid var(--line); }
 .footer .brand span { font-size: 1.7rem; }
 .copyright { font-size: .76rem; color: var(--muted); white-space: nowrap; }
@@ -151,7 +154,7 @@ em { font-weight: 500; }
 .info-page strong { color: var(--ink); }
 .info-page p a { text-underline-offset: 3px; overflow-wrap: anywhere; }
 .info-section { margin-top: 28px; padding-top: 25px; border-top: 1px solid var(--line); }
-.info-section ul { padding-inline-start: 22px; }
+.info-section ul, .info-section ol { padding-inline-start: 22px; }
 .support-questions details { border-bottom: 1px solid var(--line); }
 .support-questions summary { padding: 14px 0; font-weight: 600; cursor: pointer; }
 .support-questions details p { padding-bottom: 16px; }

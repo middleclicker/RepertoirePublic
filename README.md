@@ -1,8 +1,9 @@
 # Repertoire website
 
-The static landing page for Repertoire for iPhone and iPad. Pushes to `main` deploy through GitHub Pages.
+The static landing page for Repertoire for iPhone, iPad, and Android. Pushes to `main` deploy through GitHub Pages.
 
 - [Home](https://www.getrepertoire.app/)
+- [Android download](https://www.getrepertoire.app/android.html)
 - [What’s new](https://www.getrepertoire.app/update.html)
 - [Privacy Policy](https://www.getrepertoire.app/privacy/)
 - [Support](https://www.getrepertoire.app/support/)
