@@ -25,9 +25,12 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Prepare public files
         run: |
-          mkdir -p _site
-          cp index.html styles.css site.js robots.txt sitemap.xml .nojekyll _site/
-          cp -R assets privacy terms community support _site/
+          mkdir -p _site/privacy _site/support
+          cp index.html privacy.html support.html style.css script.js robots.txt sitemap.xml .nojekyll _site/
+          cp -R assets _site/
+          for page in privacy support; do
+            sed -E 's@href="(index\.html|privacy\.html|support\.html|style\.css|assets/)@href="../\1@g' "$page.html" > "_site/$page/index.html"
+          done
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
