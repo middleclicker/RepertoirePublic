@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f9f7f1">
-  <meta name="description" content="Explore Repertoire 1.0.1, the upcoming update for iPhone and iPad.">
+  <meta name="description" content="Preview Repertoire 1.0.2 for iPhone and iPad, with interactive sheet music, weekly and smart practice goals, recordings, and practice analytics.">
   <title>What’s new — Repertoire</title>
   <link rel="icon" href="assets/app-icon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
@@ -20,39 +20,49 @@
   </header>
   <main class="wrap" id="main">
     <section class="update-hero" aria-labelledby="update-title">
-      <p class="kicker">Upcoming update · Version 1.0.1</p>
-      <h1 class="update-title" id="update-title">A closer look at<br><em>Repertoire.</em></h1>
-      <p>Explore the upcoming 1.0.1 build below. You can download Repertoire from the App Store today while 1.0.1 awaits approval.</p>
+      <p class="kicker">iOS 1.0.2 preview</p>
+      <h1 class="update-title" id="update-title">From the first bar<br><em>to the last.</em></h1>
+      <p>The next update for iPhone and iPad brings sheet music, practice plans, and recordings into the same session. The current release is available on the App Store.</p>
       <a class="button button-green" href="https://apps.apple.com/us/app/repertoire-a-social-music-app/id6824277335">View on the App Store <span aria-hidden="true">↗</span></a>
     </section>
     <div class="update-grid">
-      <article class="update-card">
+      <article class="feature-card card-practice" id="score">
         <div class="card-copy">
-          <h3>Rank the pieces you’ve played.</h3>
-          <p>Compare pieces by how much you enjoyed playing them. Once you’ve ranked five, you’ll see personal enjoyment scores that reflect the order you chose.</p>
+          <h2>Play along with your score.</h2>
+          <p>Open a score from the catalogue where available, or import your own MusicXML or compressed MusicXML (.mxl) file. Turn your device sideways for more room, start playback from a selected bar, or loop a passage. For multi-part scores, you can show the part you’re practicing, toggle accompaniment, and adjust each part’s volume.</p>
         </div>
-        <div class="phone"><img src="assets/screens/repertoire.webp" alt="A list of played pieces ranked by enjoyment" width="720" height="1565" loading="lazy"></div>
+        <figure class="practice-stage">
+          <div class="score-frame"><img src="assets/screens/score-landscape.webp" alt="Landscape playback of Clair de lune, with the cursor in the highlighted bar" width="1180" height="543" loading="lazy"></div>
+        </figure>
       </article>
-      <article class="update-card">
+      <article class="update-card card-cream" id="practice">
         <div class="card-copy">
-          <h3>Find more music to learn.</h3>
-          <p>Try a title, composer, or catalogue number such as BWV 846. When you aren’t searching, Repertoire suggests pieces based on what you play and save.</p>
+          <h2>Give your practice a plan.</h2>
+          <p>Choose practice days and set reminders with a weekly goal. For a recital or other deadline, a smart goal builds a bar-by-bar schedule around your practice time. Start from a later bar if you’ve already learned the opening, or build separate timelines for multiple parts.</p>
         </div>
-        <div class="phone"><img src="assets/screens/search.webp" alt="Search with a personalized list of recommended compositions" width="720" height="1565" loading="lazy"></div>
+        <div class="phone"><img src="assets/screens/timeline.webp" alt="Smart practice timeline for Clair de lune showing when and which bars to practice" width="720" height="1565" loading="lazy"></div>
       </article>
-      <article class="update-card" id="practice">
+      <article class="update-card card-sage">
         <div class="card-copy">
-          <h3>Build a practice history.</h3>
-          <p>Time a session, pause when you need a break, and save when you’re done. Piece details show your total time and up to ten recent sessions.</p>
+          <h2>Hear how your practice changes.</h2>
+          <p>Time a session, use a metronome, or tune supported instruments. Record takes to listen back later and save the bars you covered. Your practice history and analytics show how your time adds up, and completed sessions earn XP.</p>
         </div>
-        <div class="phone"><img src="assets/screens/history.webp" alt="Clair de lune details with total practice time and a chart of recent sessions" width="720" height="1565" loading="lazy"></div>
+        <div class="phone"><img src="assets/screens/score.webp" alt="Clair de lune in a timed practice session with sheet music and recording controls" width="720" height="1565" loading="lazy"></div>
+      </article>
+      <article class="update-card card-lilac">
+        <div class="card-copy">
+          <h2>Find more music to learn.</h2>
+          <p>Search by title, composer, or catalogue number such as BWV 846. Repertoire suggests pieces based on what you play and save.</p>
+        </div>
+        <div class="phone"><img src="assets/screens/search.webp" alt="Search showing recommended pieces by Chopin, Beethoven, and other composers" width="720" height="1565" loading="lazy"></div>
       </article>
       <article class="update-card" id="discover">
         <div class="card-copy">
-          <h3>Discover what others play.</h3>
-          <p>See what musicians you follow have saved, enjoyed, or started practicing. To unlock the Discover feed, invite a new musician who signs up with your code.</p>
+          <h2>Practice with other musicians.</h2>
+          <p>See who’s practicing in Discover, send encouragement, or invite a musician to practice alongside you. Share a recording when you publish a practice post.</p>
+          <a class="text-link" href="support.html#discover">How to unlock Discover <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="phone"><img src="assets/screens/discover.webp" alt="Discover feed with a musician’s current practice status and played pieces" width="720" height="1565" loading="lazy"></div>
+        <div class="phone"><img src="assets/screens/discover.webp" alt="Discover showing recent pieces added by musicians you follow" width="720" height="1565" loading="lazy"></div>
       </article>
     </div>
   </main>
