@@ -139,6 +139,11 @@ em { font-weight: 500; }
 .download-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; }
 .android-download { margin-top: 22px; }
 .info-page .download-meta { margin-top: 10px; font-size: .85rem; }
+.android-intro { display: grid; grid-template-columns: 1fr minmax(155px, 200px); gap: 28px; align-items: center; }
+.android-intro h1 { font-size: clamp(3.4rem, 6.5vw, 5.05rem); }
+.android-screen { width: 100%; }
+.android-screen .phone { border-radius: 10% / 4.5%; }
+.android-screen .phone img { border-radius: 9% / 4%; }
 .footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 24px; border-top: 1px solid var(--line); }
 .footer .brand span { font-size: 1.7rem; }
 .copyright { font-size: .76rem; color: var(--muted); white-space: nowrap; }
@@ -161,6 +166,7 @@ em { font-weight: 500; }
 .update-hero { max-width: 760px; padding-block: 48px 57px; }
 .update-hero h1 { margin-block: 16px; }
 .update-hero > p:not(.kicker) { max-width: 620px; color: var(--muted); font-size: 1.12rem; margin-bottom: 22px; }
+.update-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .update-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding-bottom: 75px; }
 .update-card { display: grid; grid-template-rows: auto 1fr; background: #ebe7df; border-radius: 14px; overflow: hidden; }
 .update-card .phone { width: min(68%, 285px); margin: 22px auto 35px; align-self: end; }
@@ -199,6 +205,8 @@ em { font-weight: 500; }
   .social-copy { grid-row: 1; }
   .social-art { min-height: 310px; }
   .download-inner { padding-block: 52px; }
+  .android-intro { grid-template-columns: 1fr; }
+  .android-screen { width: min(56%, 190px); justify-self: center; }
   .footer { flex-wrap: wrap; gap: 4px 15px; padding-block: 17px; }
   .footer-links { order: 3; width: 100%; gap: 20px; }
   .info-page { padding-bottom: 55px; }
